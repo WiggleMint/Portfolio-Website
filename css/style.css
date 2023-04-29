@@ -22,6 +22,7 @@ nav {
     display: flex;
     flex-direction: column;
     opacity: 1;
+    -webkit-animation: navShow 0.3s ease-in-out;
     animation: navShow 0.3s ease-in-out;
     z-index: 10;
 }
@@ -83,6 +84,7 @@ nav {
     background-color: black;
     border-radius: 5px;
     cursor: pointer;
+    -webkit-transition: visibility 0.5s, opacity 0.5s;
     transition: visibility 0.5s, opacity 0.5s;
     z-index: 10;
 }
@@ -104,6 +106,7 @@ main {
     color: white;
     display: flex;
     flex-wrap: wrap;
+    -webkit-transition: margin-left 0.3s ease-in-out;
     transition: margin-left 0.3s ease-in-out;
 }
 
@@ -123,17 +126,21 @@ main p {
     line-height: 25px;
     opacity: 0;
     animation: showContent 0.5s ease-in-out 0.5s forwards;
+    -webkit-animation: showContent 0.5s ease-in-out 0.5s forwards;
 }
 
 main h2 {
     font-size: 25px;
     opacity: 0;
     animation: showContent 0.5s ease-in-out 0.5s forwards;
+    -webkit-animation: showContent 0.5s ease-in-out 0.5s forwards;
+
 }
 
 main h3 {
     opacity: 0;
     animation: showContent 0.5s ease-in-out 0.5s forwards;
+    -webkit-animation: showContent 0.5s ease-in-out 0.5s forwards;
 }
 
 .main-topic {
@@ -154,12 +161,19 @@ main a {
     padding: 3%;
     opacity: 0;
     animation: showContent 0.5s ease-in-out 1s forwards;
+    -webkit-animation: showContent 0.5s ease-in-out 1s forwards;
 }
 
 .bars {
     width: 100%;
     height: 2px;
     background-color: #383838;
+    
+}
+
+@keyframes slideBar {
+    from {width: 0;}
+    to {width: 100%;}
 }
 
 .yellow-bar {
@@ -172,6 +186,7 @@ main a {
     background-color: #39FF14;
     width: 70%;
     height: 100%;
+
 }
 
 .purple-bar {
@@ -231,9 +246,15 @@ main a {
     flex-wrap: wrap;
 }
 
+.content h4 {
+    width:100%;
+    margin: 10px 0;
+}
+
 .subjects {
     font-family: 'Courgette', 'Arial', cursive;
     width: 50%;
+    min-width: 225px;
 }
 
 .subject {
@@ -248,21 +269,23 @@ main a {
 
 .modules {
     padding: 5px;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     background-color: #383838;
     border-radius: 5px;
     text-align: center;
+    justify-content: center;
 }
 
-.content h4 {
-    width:100%;
-    margin: 10px 0;
+.module {
+    width: 50%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    min-width: 225px;
 }
 
-.modules p {
+.module p {
     font-family: 'Courgette', cursive;
     font-size: 15px;
     margin: 0;
