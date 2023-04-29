@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isiaih Alabi's Portfolio Website</title>
+    
+    <link rel="stylesheet" href="css\style.css">
+    <script src="js\scripts.js"></script>
+    <link rel="icon" href="images\Favicon - initials.png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav id="navbar">
+
+        <div class="logo">
+            <img src="images\Isiaih Alabi potrait.jpg" alt="Icon" class="icon">
+            <h3>Isiaih Alabi</h3>
+            <p>Software Developer</p>
+
+        </div>
+        
+        <div class="navLinks">
+            <a href="index.html">About Me</a>
+            <a href="myskills.html">My Skills</a>
+            <a href="myeducation.html">My Education</a>
+            <a href="contactme.html">Contact Me</a>
+        </div>
+
+    </nav>
+
+    <button id="menuToggle" type="button" onclick="openNav()"><i class="fa-solid fa-bars fa-3x"></i></button>
+
+    <main>
+        <div class="education">
+            <h1>My Education</h1>
+            
+            <div class="schools">
+                <div class="school">
+                    <h2><a href="https://www.thewarrenschool.net/" target="_blank">The Warren School</a></h2>
+                    <h3>GCSEs (2016/17 year)</h3>
+                    <p>I completed 9 GCSE’s and 1 BTEC Level 2 Certificate (equivalent of 1 GCSE), including a grade 9 in Maths and grade 6 in English.</p>
+                    <button class="collapsible">Click to see GCSEs</button>
+                    <div class="content">
+                        <table class="subjects">
+                            <tr>
+                                <td class="subject">Mathematics</td>
+                                <td class="grade">Grade 9</td>
+                            </tr>
+                            <tr>
+                                <td class="subject">English Literature</td>
+                                <td class="grade">Grade 6</td>
+                            </tr>
+                            <tr>
+                                <td class="subject">English Language</td>
+                                <td class="grade">Grade 5</td>
+                            </tr>
+                            <tr>
+                                <td class="subject">Science</td>
+                                <td class="grade">C</td>
+                            </tr>
+                            <tr>
+                                <td class="subject">Additional Science</td>
+                                <td class="grade">A</td>
+                            </tr>
+                        </table>
+                        <table class="subjects">
+                            <tr>
+                                <td class="subject">Geography</td>
+                                <td class="grade">B</td>
+                            </tr>
+                            <tr>
+                                <td class="subject">French</td>
+                                <td class="grade">C</td>
+                            </tr>
+                            <tr>
+                                <td class="subject">Business Studies</td>
+                                <td class="grade">A</td>
+                            </tr>
+                            <tr>
+                                <td class="subject">Religiion</td>
+                                <td class="grade">B</td>
+                            </tr>
+                            <tr>
+                                <td class="subject">BTEC Engineering</td>
+                                <td class="grade">Distinction*</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <h3>A-Levels (2018/19 year)</h3>
+                    <p>I completed 2 A-Levels as well as a BTEC National Extended Certificate (equivalent of 1 A-Level).</p>
+                    <button class="collapsible">Click to see A-Levels</button>
+                    <div class="content">
+                        <table class="subjects">
+                            <tr>
+                                <td class="subject">Mathematics</td>
+                                <td class="grade">A</td>
+                            </tr>
+                            <tr>
+                                <td class="subject">Economics</td>
+                                <td class="grade">B</td>
+                            </tr>
+
+                        </table>
+                        <table class="subjects">
+                            <tr>
+                                <td class="subject">Engineering</td>
+                                <td class="grade">Distinction*</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="school">
+                    <h2><a href="https://www.bath.ac.uk/" target="_blank">University of Bath</a></h2>
+                    <h3>BSc (Hons) Accounting and Finance </h3>
+                    <p>Currently studying in the final year of a four-year “thick sandwich” degree which included an industry placement during year three. </p>
+                    
+                    <button class="collapsible">Click to see Modules</button>
+                    <div class="content">
+                        <h4>Year 1</h4>
+                        <div class="modules">
+                            <div class="module">
+                                <p>MN10668</p>
+                                <p>Fundamentals of Accounting</p>
+                            </div>
+                            <div class="module">
+                                <p>MN10669</p>
+                                <p>Fundamentals of Finance</p>
+                            </div>
+                            <div class="module">
+                                <p>MN10004</p>
+                                <p>Business Computing</p>
+                            </div>
+                            <div class="module">
+                                <p>MN10442</p>
+                                <p>Introduction to Business Law</p>
+                            </div>
+                            <div class="module">
+                                <p>ES10010</p>
+                                <p>Introductory Economics</p>
+                            </div>
+                            <div class="module">
+                                <p>ES10003</p>
+                                <p>Introduction to Statistics</p>
+                            </div>
+                            <div class="module">
+                                <p>ES10005</p>
+                                <p>Mathematics 1</p>
+                            </div>
+                        </div>
+
+                        <h4>Year 2</h4>
+                        <div class="modules">
+                            <div class="module">
+                                <p>MN20026</p>
+                                <p>Principles of Finance</p>
+                            </div>
+                            <div class="module">
+                                <p>MN20211</p>
+                                <p>Advanced Corporate Finance</p>
+                            </div>
+                            <div class="module">
+                                <p>MN20690</p>
+                                <p>Intermediate Management Accounting</p>
+                            </div>
+                            <div class="module">
+                                <p>MN20508</p>
+                                <p>Contemporary Issues in Accounting and Finance Practice</p>
+                            </div>
+                            <div class="module">
+                                <p>MN20018</p>
+                                <p>Financial Accounting and Reporting</p>
+                            </div>
+                            <div class="module">
+                                <p>MN20310</p>
+                                <p>Empirical Finance</p>
+                            </div>
+                            <div class="module">
+                                <p>MN20050</p>
+                                <p>Supply Management</p>
+                            </div>
+                            <div class="module">
+                                <p>MN20023</p>
+                                <p>Business Forecasting</p>
+                            </div>
+                            <div class="module">
+                                <p>MN20024</p>
+                                <p>Commercial Contracts</p>
+                            </div>
+                            <div class="module">
+                                <p>MN20010</p>
+                                <p>Company Law</p>
+                            </div>
+                        </div>
+
+                        <h4>Year 4</h4>
+                        <div class="modules">
+                            <div class="module">
+                                <p>MN30315	</p>
+                                <p>Advanced Financial Accounting</p>
+                            </div>
+                            <div class="module">
+                                <p>MN30506	</p>
+                                <p>Financial Markets - Equity</p>
+                            </div>
+                            <div class="module">
+                                <p>MN30209</p>
+                                <p>Investment Banking</p>
+                            </div>
+                            <div class="module">
+                                <p>MN30468	</p>
+                                <p>Auditing & Accountability</p>
+                            </div>
+                            <div class="module">
+                                <p>MN30039</p>
+                                <p>Employment Law</p>
+                            </div>
+                            <div class="module">
+                                <p>MN30062</p>
+                                <p>International Business Law</p>
+                            </div>
+                            <div class="module">
+                                <p>MN30266</p>
+                                <p>Decision Making</p>
+                            </div>
+                            <div class="module">
+                                <p>MN30316</p>
+                                <p>Risk Management and Internal Control</p>
+                            </div>
+                            <div class="module">
+                                <p>MN30444</p>
+                                <p>UK Tax and Tax Planning for the growing business</p>
+                            </div>
+                            <div class="module">
+                                <p>MN30281</p>
+                                <p>Privacy, trust and security in information systems</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    var coll = document.getElementsByClassName("collapsible");
+                    var i;
+                    
+                    for (i = 0; i < coll.length; i++) {
+                      coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.maxHeight){
+                          content.style.maxHeight = null;
+                        } else {
+                          content.style.maxHeight = content.scrollHeight + "px";
+                        } 
+                      });
+                    }
+                    </script>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
